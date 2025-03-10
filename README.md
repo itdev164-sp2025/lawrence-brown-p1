@@ -1,2 +1,3 @@
-# lawrence-brown-p1
-Project 1
+# lawrence-brown
+Class Repository
+Hello World!
