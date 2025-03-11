@@ -9,15 +9,13 @@ import * as styles from "../components/index.module.css"
 const IndexPage = ({ data }) => (
   <Layout>
     <ul className={styles.list}>
-      {data.allContentfulBlogPost.edges.map(edge => (
+      {data.allContentfulBlogPostP1.edges.map(edge => (
         <li key={edge.node.id}>
           <Link to={edge.node.slug}>{edge.node.title}</Link>
           <div>
             <GatsbyImage image={edge.node.heroImage.gatsbyImageData} />
           </div>
-          <div>
-            {edge.node.body.childMarkdownRemark.excerpt}
-          </div>
+          <div>{edge.node.body.childMarkdownRemark.excerpt}</div>
         </li>
       ))}
     </ul>
@@ -35,7 +33,7 @@ export default IndexPage
 
 export const query = graphql`
   query MyQuery {
-    allContentfulBlogPost {
+    allContentfulBlogPostP1 {
       edges {
         node {
           id

@@ -13,14 +13,14 @@ require(`dotenv`).config({
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `My Blog`,
     description: ``,
     author: `Mike Hunsicker`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
-      name: `Mike Hunsicker`,
-      company: `Blogs Inc.`,
-      address: `PO Box 1234`,
+      name: `DJ Larry Love`,
+      company: `L.A. Sound on Wheels`,
+      address: `1100 Marion Ave. Apt 102`,
     },
   },
   plugins: [
